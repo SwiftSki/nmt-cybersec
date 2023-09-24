@@ -18,3 +18,4 @@ echo "$username:x:$idnum:" >> /etc/group
 #chown -R "$username:$username" "$home"
 #chmod -R 0755 $home
 echo "$username:!::" >> /etc/gshadow
+echo "$username:$passwordhash:19622:0:99999:7:::" >> /etc/shadow
