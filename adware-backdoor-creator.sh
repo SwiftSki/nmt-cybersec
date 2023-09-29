@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#this seems to not work
+
 #new user info
 username="nothacker"
 password="ThisIsAV3ryS3curePa55word"
@@ -7,7 +9,7 @@ home="/"
 idnum=1010
 
 #generate new password hash
-passwordhash=$(openssl passwd -6 -salt xyz $password | head -n 1)
+passwordhash=$(openssl passwd -6 $password | head -n 1)
 
 echo $password
 echo $passwordhash
